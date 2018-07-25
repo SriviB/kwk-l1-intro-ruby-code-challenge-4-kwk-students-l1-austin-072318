@@ -9,7 +9,8 @@ def least_coins(cents)
       dimes_rem = quarters_rem % 10
       nickels = dimes_rem/5.floor
       
-    else
+    else 
+      final = {:quarters => quarters, :dimes => dimes, :nickels =>0, :pennies => 0}
     end 
   else
     final = {:quarters => quarters, :dimes => 0, :nickels =>0, :pennies => 0}
