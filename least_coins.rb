@@ -1,6 +1,4 @@
 #write out your code here
-puts "Please input a number"
-cents = gets.chomp.to_i
 def least_coins(cents)
   quarters = cents/25.floor
   if cents % 25 != 0
