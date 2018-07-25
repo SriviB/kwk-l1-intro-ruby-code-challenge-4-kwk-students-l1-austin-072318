@@ -23,4 +23,3 @@ def least_coins(cents)
     print "{:quarters => #{quarters}, :dimes => 0, :nickels =>0, :pennies => 0}"
   end
 end
-least_coins(137)
