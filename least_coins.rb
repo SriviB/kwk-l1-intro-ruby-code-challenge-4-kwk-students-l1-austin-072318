@@ -16,10 +16,10 @@ def least_coins(cents)
         final = "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>#{nickels}, :pennies => 0}"
       end
     else 
-      final = {:quarters => quarters, :dimes => dimes, :nickels =>0, :pennies => 0}
+      final = "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>0, :pennies => 0}"
     end 
   else
-    final = {:quarters => quarters, :dimes => 0, :nickels =>0, :pennies => 0}
+    final = "{:quarters => quarters, :dimes => 0, :nickels =>0, :pennies => 0}"
     print final
   end
 end
