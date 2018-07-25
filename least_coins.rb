@@ -11,16 +11,15 @@ def least_coins(cents)
       if dimes_rem % 5 != 0 
         nickels_rem = dimes_rem % 5
         pennies = nickels_rem/1.floor
-        
+        print "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>#{nickels}, :pennies => #{nickels_rem}}"
       else 
-        final = "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>#{nickels}, :pennies => 0}"
+        print "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>#{nickels}, :pennies => 0}"
       end
     else 
-      final = "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>0, :pennies => 0}"
+      print "{:quarters => #{quarters}, :dimes => #{dimes}, :nickels =>0, :pennies => 0}"
     end 
   else
-    final = "{:quarters => quarters, :dimes => 0, :nickels =>0, :pennies => 0}"
-    print final
+    print "{:quarters => #{quarters}, :dimes => 0, :nickels =>0, :pennies => 0}"
   end
 end
 least_coins(50)
